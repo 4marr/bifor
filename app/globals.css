@@ -1,26 +1,53 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  scroll-behavior: smooth;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+@theme {
+  --color-background: #FFFFFF;
+  --color-foreground: oklch(21% 0.034 264.665);
+  --color-muted-foreground: oklch(44.6% 0.03 256.802);
+  --color-input: oklch(92.8% 0.006 264.531);
+  --color-primary: oklch(48.8% 0.243 264.376);
+  --color-primary-gradient: oklch(70.7% 0.165 254.624);
+  --font-sans: var(--font-quicksand);
+  --font-formal: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+    --color-background: oklch(20.8% 0.042 265.755);
+    --color-foreground: oklch(96.7% 0.003 264.542);
+    --color-muted-foreground: oklch(70.7% 0.022 261.325);
+    --color-input: oklch(37.3% 0.034 259.733);
+    --color-primary: oklch(54.6% 0.245 262.881);
+    --color-primary-gradient: oklch(80.9% 0.105 251.813);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media print {
+  body * {
+    visibility: hidden; /* Semua disembunyikan */
+  }
+
+  #print-area, #print-area * {
+    visibility: visible; /* Hanya yang ini yang terlihat */
+  }
+
+  #print-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
 }
