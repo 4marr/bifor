@@ -21,13 +21,13 @@ export default function Testimonials() {
         {
             quote: "Belajar desain di sini seru banget! Materinya up-to-date dan langsung bisa dipraktikkan ke proyek nyata.",
             name: "Arbi Al Ghozali",
-            role: "Designer",
+            role: "Murid XI RPL",
             avatar: "/vercel.svg?height=64&width=64",
         },
         {
             quote: "Pembelajaran jaringan di SMK ini mudah dipahami dan langsung praktik. Saya jadi cepat menguasai dasar-dasarnya.",
-            name: "Dedi Permana",
-            role: "Data Scientist",
+            name: "Irfan",
+            role: "Murid XI RPL",
             avatar: "/vercel.svg?height=64&width=64",
         },
     ];
@@ -152,7 +152,7 @@ export default function Testimonials() {
                                 profesional.
                             </p>
                         </div>
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div className="rounded-lg border border-input p-4 text-center">
                                 <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-gradient">
                                     {/* 98% */}

@@ -121,14 +121,14 @@ export default function Home() {
                             name="jurusan"
                             value={formAnak.jurusan}
                             onChange={handleChangeAnak}
-                            className="w-full border border-gray-300 p-2 rounded"
+                            className="w-full border border-gray-300 p-2 rounded text-foreground"
                             required
                         >
                             <option value="">-- Pilih Jurusan --</option>
-                            <option value="IPA">IPA</option>
-                            <option value="IPS">IPS</option>
-                            <option value="Bahasa">Bahasa</option>
-                            <option value="Teknik">Teknik</option>
+                            <option value="Rekaysa Perangkat Lunak (RPL)">Rekaysa Perangkat Lunak (RPL)</option>
+                            <option value="Teknik Komputer dan Jaringan (TKJ)">Teknik Komputer dan Jaringan (TKJ)</option>
+                            <option value="Multimedia (MM)">Multimedia (MM)</option>
+                            <option value="Perbankan dan Keuangan Mikro (PKM)">Perbankan dan Keuangan Mikro (PKM)</option>
                         </select>
                     </div>
 
@@ -274,7 +274,7 @@ export default function Home() {
                         <div className="mt-4 flex justify-end print:hidden">
                             <button
                                 onClick={handlePrint}
-                                className="bg-green-600 text-white flex items-center justify-center gap-2 px-4 py-2 rounded hover:bg-green-700"
+                                className="bg-primary text-white flex items-center justify-center gap-2 px-4 py-2 rounded hover:bg-primary/90"
                             >
                                 <Printer /> Print
                             </button>

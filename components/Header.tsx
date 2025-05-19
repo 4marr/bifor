@@ -90,7 +90,7 @@ export default function Header() {
 
                     <div className="flex items-center gap-4">
                         <SimpleThemeToggle />
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxHK8vlXwS9Pr3AuIlyBWDOjXwo2mgOZjx25nQhnSGal4IVw/viewform?usp=header">
+                        <a href="/form">
                             <button className="hidden lg:flex text-white font-semibold bg-gradient-to-r from-primary to-primary-gradient hover:from-primary/90 hover:to-primary-gradient/90 py-2 px-3 rounded-xl transition-all duration-300">
                                 Daftar Sekarang
                             </button>
@@ -112,37 +112,37 @@ export default function Header() {
 
                 {/* Mobile Menu */}
                 {mobileMenuOpen && (
-                    <div className="lg:hidden border-t border-t-gray-200 bg-background/95 backdrop-blur-md">
+                    <div className="lg:hidden border-t border-t-gray-200 dark:border-t-gray-600/50 bg-background/95 backdrop-blur-md">
                         <nav className="flex flex-col py-4 text-center">
                             <Link
                                 href="#jurusan"
-                                className="py-3 text-sm font-semibold border-b border-gray-200/50"
+                                className="py-3 text-sm font-semibold border-b border-gray-200/50 dark:border-gray-600/50"
                                 onClick={() => setMobileMenuOpen(false)}
                             >
                                 Jurusan
                             </Link>
                             <Link
                                 href="#info-ppdb"
-                                className="py-3 text-sm font-semibold border-b border-gray-200/50"
+                                className="py-3 text-sm font-semibold border-b border-gray-200/50 dark:border-gray-600/50"
                                 onClick={() => setMobileMenuOpen(false)}
                             >
                                 Info PPDB
                             </Link>
                             <Link
                                 href="#testimoni"
-                                className="py-3 text-sm font-semibold border-b border-gray-200/50"
+                                className="py-3 text-sm font-semibold border-b border-gray-200/50 dark:border-gray-600/50"
                                 onClick={() => setMobileMenuOpen(false)}
                             >
                                 Testimoni
                             </Link>
                             <Link
                                 href="#kontak"
-                                className="py-3 text-sm font-semibold border-b border-gray-200/50"
+                                className="py-3 text-sm font-semibold border-b border-gray-200/50 dark:border-gray-600/50"
                                 onClick={() => setMobileMenuOpen(false)}
                             >
                                 Kontak
                             </Link>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxHK8vlXwS9Pr3AuIlyBWDOjXwo2mgOZjx25nQhnSGal4IVw/viewform?usp=header">
+                            <a href="/form">
                                 <button className="mt-4 text-white font-semibold bg-gradient-to-r from-primary to-primary-gradient hover:from-primary/90 hover:to-primary-gradient/90 py-2 px-3 rounded-xl transition-all duration-300">
                                     Daftar Sekarang
                                 </button>
