@@ -140,33 +140,6 @@ export default function jadwal() {
                     </h2>
                 </motion.div>
             </div>
-            <div className="pb-20 mx-auto">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                    transition={{ duration: 0.5 }}
-                >
-                    <div className="grid gap-4 md:grid-cols-12">
-                        <div className="col-span-12 md:col-span-3">
-                            <div className="text-center md:text-left mb-8 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto md:before:mx-0 before:bg-blue-600">
-                                <h3 className="text-3xl font-semibold">Jadwal PPDB</h3>
-                                <span className="text-sm font-bold tracking-wider uppercase text-foreground">SMK BINA INFORMATIKA</span>
-                            </div>
-                        </div>
-                        <div className="relative col-span-12 md:px-4 space-y-6 md:col-span-9">
-                            <div className="col-span-12 space-y-12 relative md:px-4 md:col-span-8 md:space-y-8 md:before:absolute md:before:top-2 md:before:bottom-0 md:before:w-0.5 md:before:-left-3 before:bg-gray-300">
-                                {jadwals.map((jadwal, index) => (
-                                    <div key={index} className="group flex flex-col md:relative md:before:absolute md:before:top-2 md:before:w-4 md:before:h-4 md:before:rounded-full md:before:left-[-35px] md:before:z-[1] before:bg-blue-600">
-                                        <h3 className="text-xl font-semibold tracking-wide group-hover:text-primary transition-colors duration-300">{jadwal.title}</h3>
-                                        <time className="text-xs tracking-wide uppercase text-muted-foreground">{jadwal.date}</time>
-                                        <p className="mt-3 text-muted-foreground">{jadwal.description}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
-            </div>
             <div>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

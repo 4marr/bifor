@@ -146,7 +146,7 @@ export default function Hero() {
                             <div className="relative z-10 rounded-2xl overflow-hidden border border-input shadow-2xl">
                                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-primary-gradient/10" />
                                 <Image
-                                    src="/gedung.jpg"
+                                    src="/brosur.jpg"
                                     width={600}
                                     height={500}
                                     alt="SMK BINA INFORMATIKA"

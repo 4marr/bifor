@@ -109,6 +109,22 @@ export default function Rpl() {
                             </div>
                         </div>
 
+                        <div className="m-14 flex flex-col gap-4 text-center">
+                            <h1 className="text-gray-600 md:text-3xl font-black mb-4">Projek yang pernah dibuat</h1>
+                            <div>
+                                <h2 className="text-gray-600 md:text-xl font-bold hover:text-primary"><a href="https://wa.me/6283866712646?text=.menu">Bot WA Ruri-MD</a></h2>
+                                <p>Bot wa menggunakan NodeJS dan library baileys untuk memudahkan pengguna whatsapp</p>
+                            </div>
+                            <div>
+                                <h2 className="text-gray-600 md:text-xl font-bold hover:text-primary"><a href="https://arnime.ammaricano.my.id">Arnime</a></h2>
+                                <p>Website nonton anime dibuat menggunakan NextJS dan RestAPI</p>
+                            </div>
+                            <div>
+                                <h2 className="text-gray-600 md:text-xl font-bold hover:text-primary"><a href="https://ammaricano.my.id/tictactoe">Tic Tac Toe</a></h2>
+                                <p>Website game menggunakan ReactJS</p>
+                            </div>
+                        </div>
+
                         <div className="space-y-2">
                             <h1 className="text-gray-600 md:text-xl font-medium">Lulusan: </h1>
                             <ul className="list-decimal list-inside text-gray-600 md:text-lg space-y-2">
